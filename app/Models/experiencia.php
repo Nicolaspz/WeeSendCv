@@ -10,6 +10,7 @@ class experiencia extends Model
     use HasFactory;
 
     protected $fillable = [
+        'cargo',
         'empresa',
         'data_inicio',
         'data_fim',

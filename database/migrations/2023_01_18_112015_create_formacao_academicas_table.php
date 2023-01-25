@@ -16,15 +16,15 @@ return new class extends Migration
         Schema::create('formacao_academicas', function (Blueprint $table) {
             $table->id();
             $table->string("pais");
-            $table->string("cidade");
             $table->string("descricao");
             $table->string("titulo");
-            $table->string("intituicao");
+            $table->string("instituicao");
             $table->string("curso");
             $table->string("estado");
             $table->date("data_inicio");
-            $table->date("data_fim");
+            $table->date("data_fim")->nullable();
             $table->timestamps();
+
         });
     }
 

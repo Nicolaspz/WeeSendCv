@@ -25,3 +25,6 @@ Route::get('/candidatura', [App\Http\Controllers\HomeController::class, 'abrirCa
 Route::get('/perfil/{id}', [App\Http\Controllers\HomeController::class, 'abrirperfil'])->name('candidato.perfil');
 Route::put('/update/{id}', [App\Http\Controllers\CandidatoController::class, 'update'])->name('update');
 Route::post('/ad_expe/{id}', [App\Http\Controllers\CandidatoController::class, 'expeperienciaAdd'])->name('candidato.experiencia');
+Route::post('/ad_formacao/{id}', [App\Http\Controllers\CandidatoController::class, 'Formacaodd'])->name('candidato.formacao');
+Route::post('/ad_apt/{id}', [App\Http\Controllers\CandidatoController::class, 'AptidaoAdd'])->name('candidato.aptidao');
+Route::post('/getComp', [App\Http\Controllers\CandidatoController::class, 'GetComp'])->name('get_competencia');
